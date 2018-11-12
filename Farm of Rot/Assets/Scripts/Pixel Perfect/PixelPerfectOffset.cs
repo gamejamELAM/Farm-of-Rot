@@ -25,7 +25,7 @@ namespace Pixel_Perfect
 
 			var differencePosition = pixelPerfectPosition - parentsPosition;
 			var newPosition = Vector3.Lerp(transform.localPosition, differencePosition, _speed);
-			transform.localPosition = differencePosition + _offset;
+			transform.localPosition = newPosition + _offset;
 		}
 	}
 }
